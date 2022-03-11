@@ -31,11 +31,6 @@ export class WkSimpleCard extends OutlineElement {
    */
   @property() date: string;
 
-  /**
-   * Whether or not this is a nested container. If it's nested, remove padding.
-   */
-  @property({ type: Boolean, attribute: 'is-rounded' }) isRounded = false;
-
   render(): TemplateResult {
     return html`
       <div class="simple-card">
