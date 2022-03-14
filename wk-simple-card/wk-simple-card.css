@@ -24,7 +24,6 @@
   }
 
   &__title {
-
     a {
       color: inherit;
     }
@@ -32,6 +31,12 @@
 
   &__meta {
 
+  }
+
+  &__bgImage {
+    img {
+      width: 10%;
+    }
   }
 
 }
