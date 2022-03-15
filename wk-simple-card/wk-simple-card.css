@@ -6,7 +6,12 @@
   @apply relative;
 
   &__background {
-
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   }
 
   &__content {
@@ -31,12 +36,6 @@
 
   &__meta {
 
-  }
-
-  &__bgImage {
-    img {
-      width: 10%;
-    }
   }
 
 }
