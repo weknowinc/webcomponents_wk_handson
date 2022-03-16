@@ -13,7 +13,7 @@ export class WkHello extends OutlineElement {
 
   render(): TemplateResult {
     return html`
-      <slot></slot>
+      <p>Hello World</p>
     `;
   }
 }
