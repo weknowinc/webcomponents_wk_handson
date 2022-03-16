@@ -1,5 +1,5 @@
 import { html, TemplateResult } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 import { OutlineElement } from '../../base/outline-element/outline-element';
 import componentStyles from './wk-biography.css.lit';
 
