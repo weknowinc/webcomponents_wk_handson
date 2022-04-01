@@ -1,0 +1,33 @@
+:host {
+  @apply block overflow-hidden; 
+}
+
+.card {
+  @apply relative;
+
+  &--primary {
+    @apply bg-blue-100;
+  }
+
+  &__content {
+    @apply px-4
+      py-6
+      text-center
+      w-full;
+  }
+
+  &__tag {
+    @apply uppercase;
+  }
+
+  &__title {
+    a {
+      color: inherit;
+    }
+  }
+
+  &__meta {
+
+  }
+
+}
