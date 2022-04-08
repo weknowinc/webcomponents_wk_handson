@@ -27,6 +27,7 @@ export default {
     date: 'September 15, 2016',
     url: '#',
     rounded: false,
+    variant: 'primary'
   },
 };
 
@@ -35,7 +36,8 @@ const Template = ({
   tag,
   date,
   url,
-  rounded
+  rounded,
+  variant
 }): TemplateResult =>
   html`
     <outline-container>
@@ -43,8 +45,9 @@ const Template = ({
         tag="${ifDefined(tag)}"
         date=${ifDefined(date)}
         url="${ifDefined(url)}"
+        variant="${variant}"
         ?rounded=${rounded}
-        >
+      >
       ${ifDefined(headingSlot)}
       </wk-complex-card>
     </outline-container>
