@@ -15,11 +15,6 @@ export class WkComplexCard extends OutlineElement {
   static styles = [componentStyles];
 
   /**
-   * The card title.
-   */
-  @property({ attribute: 'label' }) title: string;
-
-  /**
    * The card URL.
    */
   @property() url: string;
@@ -32,34 +27,30 @@ export class WkComplexCard extends OutlineElement {
   /**
    * Define if the card has rounded corners.
    */
-  @property({ type: Boolean }) 
+  @property({ type: Boolean })
   rounded = false;
 
   /**
    * The card style variant to use.
    */
-  @property() 
-  variant: CardVariantType = 'primary' ;
-
-  /**
-   * Add slots.
-   */
+  @property()
+  variant: CardVariantType = 'primary';
 
   render(): TemplateResult {
     const classes = {
       'card': true,
       'card--rounded': this.rounded,
       [`card--${this.variant}`]: true,
-    }
+    };
 
     return html`
       <div class="${classMap(classes)}">
         <div class="card__content">
           <span class="card__tag">Fashion</span>
 
-          <h4 class="card__title">
-            <a href="${this.url}">${this.title}</a>
-          </h4>
+          <a class="card__title" href="${this.url}">
+            <slot name="heading"></slot>
+          </a>
 
           <div class="card__meta">${this.date}</div>
         </div>
