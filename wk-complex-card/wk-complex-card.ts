@@ -20,6 +20,11 @@ export class WkComplexCard extends OutlineElement {
   @property() url: string;
 
   /**
+   * The card tag.
+   */
+  @property() tag: string;
+
+  /**
    * The card published date.
    */
   @property() date: string;
@@ -46,7 +51,7 @@ export class WkComplexCard extends OutlineElement {
     return html`
       <div class="${classMap(classes)}">
         <div class="card__content">
-          <span class="card__tag">Fashion</span>
+          <span class="card__tag">${this.tag}</span>
 
           <a class="card__title" href="${this.url}">
             <slot name="heading"></slot>
