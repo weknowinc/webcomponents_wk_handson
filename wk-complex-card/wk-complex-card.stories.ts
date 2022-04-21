@@ -7,7 +7,7 @@ import '../../base/outline-heading/outline-heading';
 const cardVariantOptions = ['primary' , 'secondary' , 'tertiary']
 
 export default {
-  title: 'Content/Complex Card',
+  title: 'WK/Complex Card',
   component: 'wk-complex-card',
   argTypes: {
     variant: {

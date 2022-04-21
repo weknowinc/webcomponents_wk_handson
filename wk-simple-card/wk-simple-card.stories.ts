@@ -3,7 +3,7 @@ import { ifDefined } from 'lit/directives/if-defined.js';
 import './wk-simple-card';
 
 export default {
-  title: 'Content/Simple Card',
+  title: 'WK/Simple Card',
   component: 'wk-simple-card',
   argTypes: {},
   args: {

@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit';
 import './wk-biography';
 
 export default {
-  title: 'Content/Biography',
+  title: 'WK/Biography',
   component: 'wk-biography',
   args: {
     name: 'Dyn Chrisma',
