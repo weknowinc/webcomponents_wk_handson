@@ -1,10 +1,10 @@
 import { html, TemplateResult } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
-import './wk-simple-card';
+import './wk-card';
 
 export default {
-  title: 'WK/Simple Card',
-  component: 'wk-simple-card',
+  title: 'WK/Card',
+  component: 'wk-card',
   argTypes: {},
   args: {
     label: 'The 10 Most Beautiful Beaches in the World',
@@ -24,15 +24,15 @@ const Template = ({
 }): TemplateResult =>
   html`
     <outline-container>
-      <wk-simple-card
+      <wk-card
         label="${ifDefined(label)}"
         tag="${ifDefined(tag)}"
         date=${ifDefined(date)}
         url="${ifDefined(url)}"
         bg-image="${ifDefined(bgImage)}"
       >
-      </wk-simple-card>
+      </wk-card>
     </outline-container>
   `;
 
-export const SimpleCard = Template.bind({});
+export const Card = Template.bind({});
