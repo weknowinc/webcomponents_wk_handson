@@ -53,9 +53,9 @@ export class WkComplexCard extends OutlineElement {
         <div class="card__content">
           <span class="card__tag">${this.tag}</span>
 
-          <a class="card__title" href="${this.url}">
+          <div class="card__title">
             <slot name="heading"></slot>
-          </a>
+          </div>
 
           <div class="card__meta">${this.date}</div>
         </div>

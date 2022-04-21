@@ -1,38 +1,35 @@
 :host {
-  @apply block overflow-hidden;
+  @apply mb-8 block overflow-hidden;
 }
 
 .card {
   @apply relative p-12;
+}
 
-  &--primary {
-    @apply bg-blue-200;
-  }
+.card--primary {
+  @apply bg-blue-200;
+}
 
-  &--secondary {
-    @apply bg-green-200;
-  }
+.card--secondary {
+  @apply bg-green-200;
+}
 
-  &--tertiary {
-    @apply bg-purple-200;
-  }
+.card--tertiary {
+  @apply bg-purple-200;
+}
 
-  &--rounded {
-    @apply rounded-2xl;
-  }
+.card--rounded {
+  @apply rounded-2xl;
+}
 
-  &__content {
-    @apply w-full px-4 py-6 text-center;
-  }
+.card__content {
+  @apply w-full px-4 py-6 text-center;
+}
 
-  &__tag {
-    @apply mb-6 uppercase;
-  }
+.card__tag {
+  @apply mb-6 text-sm uppercase;
+}
 
-  &__title {
-    @apply text-blue-900;
-  }
-
-  &__meta {
-  }
+.card__title {
+  @apply text-blue-900;
 }
