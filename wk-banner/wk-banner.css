@@ -2,34 +2,34 @@
   @apply mb-8 block overflow-hidden;
 }
 
-.card {
+.banner {
   @apply relative p-12;
 }
 
-.card--primary {
+.banner--primary {
   @apply bg-blue-200;
 }
 
-.card--secondary {
+.banner--secondary {
   @apply bg-green-200;
 }
 
-.card--tertiary {
+.banner--tertiary {
   @apply bg-purple-200;
 }
 
-.card--rounded {
+.banner--rounded {
   @apply rounded-2xl;
 }
 
-.card__content {
+.banner__content {
   @apply w-full px-4 py-6 text-center;
 }
 
-.card__tag {
+.banner__tag {
   @apply mb-6 text-sm uppercase;
 }
 
-.card__title {
+.banner__heading {
   @apply text-blue-900;
 }
