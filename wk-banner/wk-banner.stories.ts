@@ -25,6 +25,7 @@ export default {
       options: bannerVariantOptions
     }
   },
+  
   args: {
     headingSlot: html`
       <outline-heading level='h1' slot='heading'>
@@ -37,6 +38,14 @@ export default {
     rounded: false,
     variant: 'primary'
   },
+  
+  decorators: [
+    Story => html`
+      <outline-container class="py-12">
+        ${Story()} 
+      </outline-container>
+    `,
+  ],
 };
 
 const Template = ({
