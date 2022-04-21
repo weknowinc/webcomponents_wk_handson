@@ -1,41 +1,36 @@
 :host {
-  @apply block overflow-hidden; 
+  @apply mb-8 block;
 }
 
 .simple-card {
-  @apply relative;
+  @apply relative
+    flex
+    flex-col overflow-hidden
+    rounded-lg
+    shadow-xl
+    md:flex-row;
+}
 
-  &__background {
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-  }
+.simple-card__image {
+  @apply md:w-[15rem];
+}
 
-  &__content {
-    @apply absolute
-      bottom-0
-      px-4
-      py-6
-      text-center
-      w-full
-      text-neutral-white;
-  }
+.simple-card__image img {
+  @apply block h-full w-full object-cover;
+}
 
-  &__tag {
-    @apply uppercase;
-  }
+.simple-card__content {
+  @apply px-5 py-4;
+}
 
-  &__title {
-    a {
-      color: inherit;
-    }
-  }
+.simple-card__tag {
+  @apply mb-2 block text-sm uppercase;
+}
 
-  &__meta {
+.simple-card__title {
+  @apply m-0 mb-4 text-2xl;
+}
 
-  }
-
+.simple-card__title a {
+  @apply text-blue-900 no-underline;
 }

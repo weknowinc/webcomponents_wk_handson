@@ -34,10 +34,8 @@ export class WkSimpleCard extends OutlineElement {
   render(): TemplateResult {
     return html`
       <div class="simple-card">
-        <div class="simple-card__background">
-          <a href="${this.url}">
-            <img src="${this.bgImage}" alt="${this.title}" />
-          </a>
+        <div class="simple-card__image">
+          <img src="${this.bgImage}" alt="${this.title}" />
         </div>
 
         <div class="simple-card__content">
